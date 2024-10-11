@@ -221,18 +221,20 @@
 }
 
 .image5-container {
-  position: absolute;
-  top: 275%;
-  left: 20%; 
-  transform: translateX(-50%); /* Centra horizontalmente la imagen */
-  z-index: 999;
-  pointer-events: none;
+  position: relative; /* Cambiar de absolute a relative */
+  top: 0; /* Restablece la posición */
+  left: 0; /* Restablece la posición */
+  margin: 50px auto; /* Agrega un margen superior y centra */
+  width: 80%; /* Ajusta el ancho para la responsividad */
+  text-align: center; /* Centra el texto */
 }
 
 .image5-container img {
-  width: 1000px;
+  width: 100%;
   height: auto;
+  border-radius: 20px; /* Mantén el borde redondeado */
 }
+
 
 
 .image5-container h2 {
