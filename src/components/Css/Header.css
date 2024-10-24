@@ -28,16 +28,16 @@
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 80px; /* Reduce el espacio entre los elementos del menú */
+  gap: 20px; /* Reduce el espacio entre los elementos del menú */
   margin: 0;
   padding: 0;
 }
 
 .main-nav a {
-  text-decoration: none;
+    text-decoration: none;
   color: #000000;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400; /* Ajusta el grosor del texto */
   transition: color 0.3s ease;
 }

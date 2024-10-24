@@ -1,3 +1,4 @@
+/* Ajustes generales de video y capas */
 .video-container {
   position: relative;
   width: 100%;
@@ -26,6 +27,7 @@
   mix-blend-mode: overlay;
 }
 
+/* Ajuste del contenido */
 .content, .content2 {
   position: absolute;
   color: white;
@@ -44,11 +46,13 @@
   transform: translate(-50%, -50%);
 }
 
+/* Tamaño del título principal */
 h1 {
   font-size: 3em;
   font-weight: bold;
 }
 
+/* Título grande */
 .title-modern {
   font-size: 150px;
   font-weight: 900;
@@ -58,6 +62,7 @@ h1 {
   text-align: center;
 }
 
+/* Título más pequeño */
 .title-modern2 {
   font-size: 45px;
   font-weight: 900;
@@ -67,6 +72,7 @@ h1 {
   text-align: center;
 }
 
+/* Botón de llamada a la acción */
 .button-container {
   position: absolute;
   bottom: 230px;
@@ -90,79 +96,56 @@ h1 {
   background-color: #e64a19;
 }
 
-/* Media Queries para Responsividad */
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+  .content {
+    top: 15%;
+  }
 
-/* Pantallas grandes (escritorios grandes) */
-@media (min-width: 1200px) {
+  .content2 {
+    top: 50%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
   .title-modern {
-    font-size: 130px;
+    font-size: 70px; /* Reduce el tamaño del título en móviles */
   }
 
   .title-modern2 {
-    font-size: 60px;
-  }
-
-  .content {
-    top: 10%;
-    left: 25%;
-  }
-  
-  
-  .content2 {
-    top: 30%;
-    left: 35%;
+    font-size: 30px; /* Reduce el tamaño del subtítulo en móviles */
   }
 
   .button-container {
-    bottom: 180px;
-  }
-}
-
-/* Pantallas medianas (tabletas) */
-@media (max-width: 900px) {
-  .title-modern {
-    font-size: 90px;
-  }
-
-  .title-modern2 {
-    font-size: 35px;
-  }
-
-  .content {
-    top: 10%;
-    left: 25%;
-  }
-  
-  
-  .content2 {
-    top: 30%;
-    left: 35%;
-  }
-
-
-  .button-container {
-    bottom: 150px;
+    bottom: 150px; /* Ajusta la posición del botón en móviles */
   }
 
   .cta-button {
-    padding: 10px 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 }
 
-/* Pantallas pequeñas (teléfonos móviles) */
-@media (max-width: 600px) {
+/* Media Queries para pantallas muy pequeñas (por ejemplo, teléfonos antiguos o resoluciones bajas) */
+@media (max-width: 480px) {
+  .content {
+    top: 40%;
+    left: 14%;
+  }
+
+  .content2 {
+    top: 48%;
+    left: 23%;
+  }
+
   .title-modern {
-    font-size: 60px;
+    font-size: 40px; /* Aún más pequeño para pantallas muy pequeñas */
   }
 
   .title-modern2 {
-    font-size: 30px;
-  }
-
-  .content, .content2 {
-    top: 25%;
-    left: 50%;
+    font-size: 20px; /* Ajuste proporcional en el subtítulo */
   }
 
   .button-container {
@@ -170,7 +153,9 @@ h1 {
   }
 
   .cta-button {
-    padding: 8px 16px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
 }
+
+/* 2.2 */

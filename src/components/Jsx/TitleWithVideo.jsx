@@ -8,6 +8,7 @@ const TitleWithVideo = () => {
         <source src="/videos/your-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      
       <div className="capa"></div>
       <div className="content" data-aos="fade-up">
         <h1 className="title-modern">Casa Blanca</h1>
